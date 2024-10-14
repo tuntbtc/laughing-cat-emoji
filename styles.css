@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Set Comic Sans as the default font */
+  }
+  
+  body, html {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: black; /* Set background color to black */
+    background-image: url('images/windows.png'); /* Set laughing cat emoji as background */
+    background-repeat: repeat; /* Repeat the emoji as a background pattern */
+    background-size: 50px 50px; /* Adjust the size of the repeating emoji */
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black; /* Set background color to black */
+    color: #E7A333; /* Set text color to gold/orange */
+    text-align: center;
+    padding: 15px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header-title {
+    font-size: 6rem; /* Make the header title HUGE */
+    margin-bottom: 10px;
+  }
+  
+  .big-emoji-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%; /* Ensure the emoji is below the header */
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: auto;
+    z-index: 1; /* Lower z-index to ensure buttons are on top */
+  }
+  
+  .big-emoji {
+    width: 700px; /* Increase the size of the big emoji */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .big-emoji:hover {
+    transform: scale(1.2); /* Make the emoji 20% bigger on hover */
+  }
+  
+  .button-container {
+    position: absolute;
+    top: 70%; /* Adjusted to ensure buttons are lower and not overlapped */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    z-index: 2; /* Set z-index to ensure buttons are above the emoji */
+  }
+  
+  .button {
+    background-color: black; /* Set background color to black */
+    color: #E7A333; /* Set text color to gold/orange */
+    border: 2px solid white; /* Add white border around buttons */
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: white; /* Change button background color on hover */
+    color: black; /* Change text color on hover */
+    transform: scale(1.1);
+  }
+  
+  .footer-text {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: black; /* Set background color to black */
+    color: #E7A333; /* Set text color to gold/orange */
+    padding: 20px; /* Add padding for better visual spacing */
+    z-index: 3;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-link {
+    color: #E7A333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .header-title {
+      font-size: 3rem; /* Reduce the font size of the header title */
+      margin-bottom: 5px; /* Reduce the margin below the title */
+    }
+  
+    .big-emoji {
+      width: 250px; /* Adjust size for smaller screens */
+    }
+  
+    .button-container {
+      top: 80%; /* Adjust button position for smaller screens */
+    }
+  }
+  
