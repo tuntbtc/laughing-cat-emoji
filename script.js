@@ -38,7 +38,7 @@ function createButtons(selectedVersion) {
       const capitalizedVersion = (version === 'iphone') ? 'iPhone' : version.charAt(0).toUpperCase() + version.slice(1);
       const button = document.createElement('button');
       button.classList.add('button');
-      button.textContent = `${capitalizedVersion} Emoji`;
+      button.textContent = `${capitalizedVersion}`;
       button.addEventListener('click', () => createBigEmoji(version));
       buttonContainer.appendChild(button);
     });
