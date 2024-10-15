@@ -49,7 +49,7 @@ body, html {
 }
 
 .big-emoji {
-  width: 700px; /* Increase the size of the big emoji */
+  width: 550px; /* Increase the size of the big emoji */
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
