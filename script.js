@@ -63,4 +63,4 @@ function playRandomMeow() {
 }
 
 // Initialize the emoji with the default version (Windows)
-createBigEmoji('windows');
+createBigEmoji('iphone');
